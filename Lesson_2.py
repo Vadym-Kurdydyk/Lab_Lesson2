@@ -15,8 +15,9 @@ while key == 1:
 
     if beta == 1:
 
-        letter = input("Enter character which you want to count ")          
-        print(letter, '=', a.count(letter))
+        for i in a:
+          print(i, '=', a.count(i))
+          
 
     elif beta == 2:
         a = ' '.join(unique_list(a.split()))
